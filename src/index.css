@@ -1,0 +1,251 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: black;
+  background-color: white;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+h1 {
+  font-family: Alata;
+  font-size: 4.6em;
+  line-height: 0;
+}
+
+
+h2 {
+  line-height: 0;
+  font-weight: normal;
+}
+
+
+h3 {
+  line-height: 1;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+
+.container {
+  margin-left: 20px;
+}
+
+
+.homePhoto {
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  width: 50%; /* Set the width to fill the container */
+  height: 100%; /* Set the height to fill the container */
+  position: fixed; /* Position the image relative to the viewport */
+  top: 0; /* Position at the top of the viewport */
+  right: 0; /* Position at the left of the viewport */
+  z-index: -1; /* Move the image behind other content */
+}
+
+.addSteak {
+  transition: all 5s;
+}
+
+.addStreak:hover {
+  background-color:red !important;
+  transition: background-color 4s !important;
+}
+
+.ark-btn:hover {
+  background-color: black; 
+  transition: background-color 0.75s;
+  color: white;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: whitesmoke;
+  cursor: pointer;
+  color: black;
+  transition: border-color 0.25s;
+}
+
+
+
+button:hover {
+  background-color: #7CB7D9;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+
+button:not(:hover) {
+  transition: background-color 0.5s;
+}
+
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+
+.card {
+  padding: 2em;
+}
+
+
+.login {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
+}
+
+
+.side-image {
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  width: 50%; /* Set the width to fill the container */
+  height: 100%; /* Set the height to fill the container */
+  position: fixed; /* Position the image relative to the viewport */
+  top: 0; /* Position at the top of the viewport */
+  right: 0; /* Position at the left of the viewport */
+  z-index: -1; /* Move the image behind other content */
+}
+
+
+.question-card{
+  padding-left: 2em;
+}
+
+
+.inspiringCaption {
+  margin-top: 80px;
+  line-height: 10px;
+  padding-left: 30px;
+  font-size: 3em;
+}
+
+
+.question-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+
+.question-container > button {
+  margin-bottom: 10px;
+}
+
+
+/* .logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding-right: 2em;
+} */
+
+.arcteryx {
+  width: 60px;
+  height: 40px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding-right: 2em;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 3px;
+  left: 100px;
+  padding-right: 2em;
+}
+
+.x {
+  position: fixed;
+  top: 4px;
+  left: 80px;
+  padding-right: 2em;
+}
+
+
+.signOutButton{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding-right: 2em;
+}
+
+.streakNumber {
+  position: fixed;
+  top: 2px;
+  right: 135px;
+  padding-right: 2em;
+}
+
+.excercise-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.ark-btn {
+  margin-left: 130px;
+  margin-bottom: 10px;
+}
+
+
+.arc-image {
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  margin-top: 100px;
+  width: 425px; /* Set the width to fill the container */
+  height: 500px; /* Set the height to fill the container */
+  position: fixed; /* Position the image relative to the viewport */
+  top: 0; /* Position at the top of the viewport */
+  right: 130px; /* Position at the left of the viewport */
+  z-index: -1; /* Move the image behind other content */
+}
