@@ -1,5 +1,6 @@
 # Mindfit 🧠
 (this is an updated version of a hackathon project)
+
 We were inspired by the fact that we all love exercise, but can never seem to find the time as university students! Thus, we wanted to find a way to package exercise so as to be realistic to fit into a student's busy schedule.
 
 ## What it does 🤔
