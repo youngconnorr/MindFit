@@ -1,13 +1,11 @@
 export const MQuestions = [
     {
         questionNum: 2,
-        prompt: "What is your exercise goal for today?",
+        prompt: "What is your meditation goals for today?",
         answers: [
-            "just getting moving",
-            "losing weight",
-            "toning abs",
-            "building muscle",
-            "flexibility",
+            "Just relaxing",
+            "Being present",
+            "Breathing Exercises",
         ]
     },
     {
