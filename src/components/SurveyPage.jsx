@@ -7,7 +7,6 @@ import 'firebase/compat/firestore';
 
 import PhysicalPage from './PhysicalPage';
 import MentalPage from './MentalPage';
-import MixPage from './MixPage';
 
 import SurveyImage from '../assets/survey-page-1-youcode.png';
 
@@ -21,7 +20,6 @@ const SurveyPage = (curStreak) => {
   const [question, setQuestion] = useState(1)
   const [mental, setMental] = useState(false)
   const [physical, setPhysical] = useState(false)
-  const [mix, setMix] = useState(false)
 
 
   function next_question() {
@@ -49,10 +47,7 @@ const SurveyPage = (curStreak) => {
                 onClick={() => {
                   setPhysical(true)
                   setMental(false)
-                  setMix(false)
                   next_question()
-                  console.log(physical)
-                  console.log(mental)
                 }}>
                 physical wellness
               </button>
@@ -60,22 +55,11 @@ const SurveyPage = (curStreak) => {
                 onClick={() => {
                   setPhysical(false)
                   setMental(true)
-                  setMix(false)
                   next_question()
-                  console.log(physical)
                 }}>
                 mental wellness
               </button>
 
-
-              <button onClick={() => {
-                next_question()
-                setMix(true)
-                setPhysical(false)
-                setMental(false)
-              }}>
-                feeling a little bit of both!
-              </button>
             </div>
           </div>
         }
@@ -91,7 +75,6 @@ const SurveyPage = (curStreak) => {
 
       {(question > 1 && physical) && <span><PhysicalPage incrementCurStreak={incrementCurStreak}/></span>}
       {(question > 1 && mental) && <span><MentalPage incrementCurStreak={incrementCurStreak}/></span>}
-      {(question > 1 && mix) && <span><MixPage incrementCurStreak={incrementCurStreak}/></span>}
 
 
     </div>

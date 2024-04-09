@@ -112,9 +112,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
-
-
 .card {
   padding: 2em;
 }
@@ -174,12 +171,11 @@ button:focus-visible {
 }
 
 
-/* .logo-container {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  padding-right: 2em;
-} */
+.med-image {
+  margin-left: 20px;
+  width: 400px;
+  height: 400px;
+}
 
 .arcteryx {
   width: 60px;
@@ -228,7 +224,15 @@ button:focus-visible {
   align-items: center;
 }
 
+.img-fade {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
 
+.img-fade.active {
+  opacity: 1;
+}
 
 
 .ark-btn {
